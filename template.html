@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsive.css">
+    <script type="module" src="main.js"></script>
+    <script src="pdf.js"></script>
+    <title>Generated Resume</title>
+    <style>
+     @media print {
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .no-print {
+        display: none;
+    }
+    .nrow1_col1,.nrow1_col2{
+        height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .main {margin: 0px auto !important;}
+
+    input, select, textarea {
+        width: 100%;
+        font-size: 12pt;
+    }
+
+    .form-container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    /* Avoid page break inside form */
+    form {
+        page-break-inside: avoid;
+    }
+
+    /* Adjust table layout (if applicable) */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+}
+
+      *{
+        margin: 0 auto;
+        padding: 0;
+        list-style: disc;
+        font-family: sans-serif;
+        }
+        .wrapper{
+            width: 100%;
+            /* max-width: 1120px; */
+        }
+        .nrow1{
+            width: 100%;
+            display: inline-block;
+            margin: auto;
+        }
+        body{
+            background-color: rgb(0, 141, 176);
+        }
+        .nrow1_col1{
+            background-color: #5e1735;
+            width: 30%;
+            color: #fff;
+            float: left;
+            height: 650px;
+            padding-top: 50px;
+        }
+        .nrow1_col2{
+            width: 70%;
+            background-color: #fff;
+            float: right;
+            height: 600px;
+            padding-top: 100px;
+        }
+        .main{
+            width: 50%;
+            margin: 50px auto;
+        }
+        .picture{
+            text-align: center;
+        }
+        .picture img{
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            border: 4px solid #ffffff;
+        }  
+        .merge{
+            background-color: #000;
+        }
+        .name{
+            background-color: #5e1735;
+            padding: 20px 5px;
+        }
+        .nrow1 h3{
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 20px;
+    
+        }
+        .content2 h3{
+            color: #5e1735;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .content1 li{
+            padding: 5px 0px;
+            list-style: none;
+        }
+        li::marker {
+                color: #5e1735; /* Bullet point color */
+                font-size: 25px;
+        }
+        .line li{
+            text-align: center;font-size: 16px;
+            display: inline-block !important;
+            padding: 5px 15px;
+            border-radius: 30px;
+            color: #fff;
+            background-color: #5e1735;
+        }
+        #download{
+            padding: 10px 15px;
+            background-color: #ffffff;
+            margin-bottom: 10px;
+            cursor: pointer;
+            color: #5e1735;
+            font-size: 15px;
+            font-weight: 600;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            transition: all 0.5s ease 0s;
+        }
+        #download:hover{
+            background: #481028;
+            color: #ffffff;
+        }
+    </style>
+</head> 
+
+<body>
+
+    <div class="nrow1">
+        <div class="main">
+            <div class="button">
+                <input type="button" value="Download Pdf" id="download">
+                </div>
+        <div class="wrapper"  id="cv">
+            <div class="nrow1_col1">
+                <div class="picture">
+                    <img width="150px" alt="" id="first">
+                    </div>
+                <div class="content1" style="margin-top: 30px;padding-left: 8px;">
+                    <h3>Contact Me:</h3>
+                    <output id="displaynum"></output>
+
+                    <h3>Address:</h3>
+                    <p id="displayadd" style="font-size: 15px;"></p>
+
+                    <h3>Expertise Skill:</h3>
+                    <ul>
+                    <li id="skill"></li>
+                    <li id="skill2"></li>
+                    <li id="skill3"></li>
+                </ul>
+            </div>
+            </div>
+            <div class="nrow1_col2">
+                <div class="name">
+                    <h2 id="name" style="color: #fff;font-size: 26px;"></h2>
+                </div>
+                <div class="content2" style="margin-top: 30px;padding-left: 20px;">
+                    <h3>Objective:</h3>
+                    <p id="para"></p>
+                    
+             <div class="disc" style="text-align: center;">
+              <h3>Education:</h3>
+                <li id="displayqual" style="font-size: 18px;"></li>
+
+              <h3>Work Experience:</h3>
+                <li id="displayex" style="font-size: 18px;"></li>
+
+              <h3 >Languages:</h3>
+              <ul class="line">
+                <li id="lan"></li>
+                <li id="lan2"></li>
+                <li id="lan3"></li>
+                <li id="lan4"></li>
+            </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>   
+<script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script type="module" src="final.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+@media only screen and (max-width: 768px) {
+    .picture img{
+        width: 100px !important;
+        height:100px !important;
+    }
+    .nrow1_col2{
+        padding-top: 69px !important;
+    }
+    #name{  font-size: 20px !important; }
+    .nrow1 h3 {font-size: 17px;}
+    .nrow1 p,li{font-size: 15px;}
+    .nrow1_col1{    height: 620px }
+    .line li {margin: 10px 0px;}
+    .nrow1_col1 {height: 620px !important;}
+}
+
+@media only screen and (max-width: 640px) {
+    .picture img{
+        width: 80px !important;
+        height:80px !important;
+    }
+    .name {padding: 10px 5px;}
+    .nrow1 h3 {font-size: 15px !important;}
+     #name { font-size: 19px !important;}
+     .content1{padding-left: 5px !important;}
+     #displayadd{font-size: 13px !important}
+     .nrow1 p,li,#displaynum{font-size: 14px !important;}    
+    .line li {padding: 5px 12px;}        
+
+}
+@media only screen and (max-width: 480px) {
+    .picture img{
+        width: 55px !important;
+        height: 55px !important;
+    }
+}  

@@ -1,0 +1,122 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium';
+    list-style: none;
+    font-weight: 100;
+}
+.main{
+    /* width: 50%; */
+    margin: 40px auto;
+    padding: 10px 40px;
+    background-color: #5e1735;
+}
+.row1{
+    background: url(images/7493376.jpg) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100px;
+    background-color: #9a9a9a;
+}
+
+.row3{
+    width: 100%;
+    display: inline-block;
+    margin: auto;    
+}
+.row3 h3{
+    font-size: 20px;
+    color: #fff;
+}
+body{
+    background-color: #5e1735;
+}
+.wrapper{
+    width: 100%;
+    max-width: 1120px;
+}
+
+.row2,.row3{
+    width: 100%;
+    display: inline-block;
+    /* float: left; */
+}
+.row3{
+    margin-top: 20px;
+}
+.row3 h2{
+    margin-top: 15px;
+}
+.row3 li{
+    text-align: center;
+}
+.row3 p, .row3 li{
+    margin-top: 10px;
+    font-size: 17px;
+    list-style: none;
+
+}
+td{
+    padding: 5px 10px 5px 10px;
+}
+.row1_inner{
+    width: 100%;
+    float: left;
+}
+.row1_inner img{
+    border-radius: 100%;
+    height: 130px;
+    width: 130px;
+    border: 4px solid #4969d2;
+}
+.box{
+    width: 50%;
+}
+/* .print{
+    display: inline-block;
+} */
+
+button{
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000 !important;
+    font-size: 19px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+#skills{
+    display: none;
+
+}
+#skills li{
+    font-size: 18px;
+    margin: 15px 0px 0px 20px;
+    list-style:circle;
+
+}
+@media only screen and (max-width: 600px) {
+    .main{
+        width: 70%;
+        margin: 40px 15%;
+    }
+    *{
+        font-weight: 300;
+    }
+    .row1 h3{
+        font-size: 25px !important;
+    }
+  }
+label{
+    color: #fff;
+    font-size: 18px;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    max-width: 300px;
+}
+form input{
+    margin-top: 9px;
+    font-size: 18px;
+    padding: 5px 19px;
+}

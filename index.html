@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Dynamic Resume</title>
+</head>
+<body>
+    <div class="main">
+    <div class="row1" style="text-align: center;">
+     <div class="wrapper">
+        <div class="row1_inner">
+        <img src="images/file.png" width="150px" alt="" srcset="">
+        <h3 style="color: #ffffff; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-top:4%; font-size: 35px;">Resume Generator
+        </h3>
+         </div>
+    </div>
+    </div>
+
+    <div class="row3">
+        <div class="wrapper">
+            <form action="template.html">
+            <table style="width: min-content;">
+            <tr><td> <h3>Personal Information</h3>    </td></tr>
+            <tr>
+           <td><label>Name :<br>
+            <input type="text" id="name" required></td>
+           <td><label>Contact Number :<br> <input type="number" id="num" ></label></td></tr>
+           <tr><td><label>Address :<br> <input type="text" id="add" ></label></td>
+           <td><label>Upload Picture :<br> <input type="file" id="file" ></label></td></tr>
+
+           <tr><td> <h3>Qualifications & Experience</h3></td></tr>
+           <tr><td><label>Objective :<br> <textarea type="text" id="objective"></textarea></label></td>
+            <td style="float: left;"><label>Academic Qualification :<br> <input type="text" id="qualification" ></label></td>
+            <td style="float: left;"><label>Work Experience :<br> <input type="text" id="exp" ></label></td>
+        </tr>
+        <tr><td style="float: left;"><label>Languages :<br> <input type="text" id="lan1" ></label></td>
+            <td style="vertical-align: bottom;"><input type="text" id="lan2" placeholder="Add Language"></td></tr>
+
+            <tr><td style="vertical-align: bottom;"><input type="text" id="lan3" placeholder="Add Language"></td>
+            <td style="vertical-align: bottom;"><input type="text" id="lan4" placeholder="Add Language"></td>
+        </tr>
+            <tr style="float: left;"><td style="float: left;"><label>Skill :<br> <input type="text" id="skill" ></label></td>
+            <td style="float: left;"><input type="text" id="skill2" placeholder="Add Skill"></td>
+            <td style="float: left;"><input type="text" id="skill3" placeholder="Add Skill" ></td></tr>
+           <tr><td><input type="button" value="Generate Resume" id="print" style="cursor: pointer;" id=" download"></td></tr>
+        </table>
+        </form>
+    </div>
+    <output id="new" style="color: #fff;"></output>
+
+
+    <div id="skills">
+    <ul>
+        <li>Html</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+    </ul>
+  </div>
+</div>
+<script type="module" src="main.js"></script>
+ 
+</body>
+</html>

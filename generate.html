@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
+    <title>Generate Resume</title>
+</head>
+<style>
+    *{
+        color: #fff;
+    }
+</style>
+<body>
+    <div class="main">
+    <div class="row1" style="text-align: center;">
+     <div class="wrapper">
+        <div class="row1_inner">
+        <img width="150px" alt="" id="first">
+        <h3 style="color: #000000; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-top:4%; font-size: 35px;">    <output id="name" style="color: #ffffff;"></output>
+        </h3>
+         </div>
+    </div>
+    </div>
+
+    <div class="row3">
+        <div class="wrapper">
+            <table>
+                <tr><td> <h3>Personal Information</h3>    </td></tr>
+                <tr>
+               <!-- <td><label>Name :<br>
+                <output id="name" style="color: #ffffff;"></output>
+                </td> -->
+               <td><label>Contact Number :<br><output id="displaynum"></output></label></td>
+               <td><label>Address :<br></label></td></tr>
+    
+               <tr><td> <h3>Qualifications & Experience</h3> </td></tr>
+               <tr><td><label>Objective :<br> <p id="para"></p> </label></td>
+                <td style="float: left;"><label>Academic Qualification :<br> <li id="displayqual"></li></label></td>
+                <td style="float: left;"><label>Work Experience :<br>                 <p style="text-align: center;" id="displayex"></p></label></td>
+            </tr>
+               <tr><td><input type="button" value="Generate Resume" id="print"></td></tr>
+            </table>
+            <h3>Objectives :</h3>
+            <p id="para"></p>
+
+            <h3>Contact :</h2>
+            <output id="displaynum"></output>
+
+            <h3>Qualification :</h3>    
+                <ul>
+                    <li id="displayqual"></li>
+                    <li></li>
+                </ul>
+
+                <h3>Work Experience :</h3>   
+                <p style="text-align: center;" id="displayex"></p>
+        </div>
+    </div>
+    <button id ="myButton">Show Skills</button>
+
+    <div id="skills">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+  </div>
+</div>
+    <!-- <div class="row2">
+        <div class="wrapper">
+            <div class="box">
+            <table >
+                <tr>
+                    <td>Product Name</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div style="margin: auto;">
+            <input type="text" id="pname" placeholder="Product Name">
+            <input type="text" id="quan" placeholder="Quantity">
+            <input type="text" id="price" placeholder="Price">
+            <button id="printbtn">Publish</button>
+
+            <div class="print">
+            <h5>Data: <output id="data"></output></h5>
+            <h5>Data: <output id="data2"></output></h5>
+            <h5>Data: <output id="data3"></output></h5>
+           </div>
+            </div>
+        </div>
+        </div>
+    </div> -->
+    <script type="module" src="final.js"></script>
+</body>
+</html>
