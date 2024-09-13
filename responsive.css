@@ -12,9 +12,10 @@
     .nrow1_col1{    height: 620px }
     .line li {margin: 10px 0px;}
     .nrow1_col1 {height: 620px !important;}
+    .main{ width: 68% !important;}
 }
-
 @media only screen and (max-width: 640px) {
+    .main{ width: 78% !important;}
     .picture img{
         width: 80px !important;
         height:80px !important;
@@ -29,8 +30,15 @@
 
 }
 @media only screen and (max-width: 480px) {
+    .main{ width: 100% !important;}
     .picture img{
         width: 55px !important;
         height: 55px !important;
     }
 }  
+@media only screen and (max-width: 420px) {
+    body{background-color: #5e1735;}
+}   
+@media only screen and (max-width: 360px) {
+    .main{ width: 143% !important;}
+}
